@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import javax.management.StandardMBean;
+
 public class HotelOperation {
     public static void main(String[] args) {
 
@@ -51,5 +53,36 @@ public class HotelOperation {
         System.out.println("Price Per Night: " + reservation3.getPrice());
         System.out.println("Total: " + reservation3.getReservationTotal() + "\n");
 
+        System.out.println("------------------------------\n");
+
+        Employee employee1 = new Employee(1, "Bob", "Sales", 30.00, 30);
+        Employee employee2 = new Employee(2, "Larry", "Plumber", 40.00, 50);
+        Employee employee3 = new Employee(3, "Adam", "Programmer", 100.00, 40);
+
+        System.out.println("Employee Class");
+        System.out.println("Employee Info");
+        System.out.println("ID: " + employee1.getEmployeeId());
+        System.out.println("Name: "  + employee1.getName());
+        System.out.println("Department: " + employee1.getDepartment());
+        System.out.println("Pay Rate: "  + employee1.getPayRate());
+        System.out.println("Hours Worked: " + employee1.getHoursWorked());
+        System.out.println("Total Pay: " + employee1.getTotalPay() + "\n");
+
+
+        System.out.println("Employee Info");
+        System.out.println("ID: " + employee2.getEmployeeId());
+        System.out.println("Name: "  + employee2.getName());
+        System.out.println("Department: " + employee2.getDepartment());
+        System.out.println("Pay Rate: "  + employee2.getPayRate());
+        System.out.println("Hours Worked: " + employee2.getHoursWorked());
+        System.out.println("Total Pay: " + employee2.getTotalPay() + "\n");
+
+        System.out.println("Employee Info");
+        System.out.println("ID: " + employee3.getEmployeeId());
+        System.out.println("Name: "  + employee3.getName());
+        System.out.println("Department: " + employee3.getDepartment());
+        System.out.println("Pay Rate: "  + employee3.getPayRate());
+        System.out.println("Hours Worked: " + employee3.getHoursWorked());
+        System.out.println("Total Pay: " + employee3.getTotalPay() + "\n");
     }
 }
